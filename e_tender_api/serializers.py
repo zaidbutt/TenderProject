@@ -14,10 +14,6 @@ class HelloSerializer(serializers.Serializer):
     name = serializers.CharField(max_length=10)
 
 
-class RegisterSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = UserProfile
-        fields= '__all__'
 
 class UserProfileSerializer(serializers.ModelSerializer):
     """Serializes a user profile object"""
